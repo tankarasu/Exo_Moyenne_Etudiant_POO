@@ -48,20 +48,6 @@ public class School {
                 " students in this school");
     }
 
-    private void listStudentFails() {
-        System.out.println("Students who fails are ... with an average of ...");
-    }
-
-
-    private void listStudentGreetings() {
-    }
-
-    private void calculateAverageFailingStudent() {
-    }
-
-    private void calculateAverageGreetingStudent() {
-    }
-
     public void makeReport(Student[] p_aStudentArray) {
 
         // list all Student with his average
@@ -88,14 +74,6 @@ public class School {
 
     public int getNumberOfStudentFails() {
         return m_iNumberOfStudentFails;
-    }
-
-    public int getStudentNumber() {
-        return m_iStudentNumber;
-    }
-
-    public static Student[] getStudentsArray() {
-        return m_aStudentsArray;
     }
 
     public int getM_iNumberOfStudentGreetings() {

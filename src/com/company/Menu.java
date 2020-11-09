@@ -1,31 +1,19 @@
 package com.company;
 
 public class Menu {
-    //constructor
 
     // méthodes
     public static void welcomeMessage() {
         String message = "We will rate students with grades and take the " +
                 "average rate";
-        String bars = "\n";
-        for (int i = 0; i < message.length(); i++) {
-            if (i == message.length()) {
-                bars += "-\n";
-            } else {
-                bars += "-";
-            }
-        }
+        StringBuilder bars = new StringBuilder("\n");
+        bars.append("-".repeat(message.length()));
         System.out.println(bars + "\nWelcome to the School\n" + message + bars);
 
     }
 
     public static void launchApplication() {
-        School mySchool = new School();
+        new School();
     }
 
-    // getters
-
-    // setters
-
-    // variables membres
 }

@@ -84,8 +84,4 @@ public class Student {
     private String[] m_aGradesListe;
     private boolean m_bIsGreeting;
 
-
-
-    // he's fail or not
-
 }

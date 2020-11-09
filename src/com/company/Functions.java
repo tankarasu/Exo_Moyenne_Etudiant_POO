@@ -4,7 +4,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Functions {
-    //constructor
 
     // méthodes
 
@@ -32,9 +31,4 @@ public class Functions {
         return true;
     }
 
-    // getters
-
-    // setters
-
-    // variables membres
 }

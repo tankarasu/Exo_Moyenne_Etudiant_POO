@@ -45,10 +45,6 @@ public class GradeList {
         return true;
     }
 
-    // getters
-
-    // setters
-
     // variables membres
     private String[] m_iGradeArray;
     static Scanner userInput = new Scanner(System.in);
