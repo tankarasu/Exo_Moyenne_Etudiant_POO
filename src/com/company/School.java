@@ -13,6 +13,9 @@ public class School {
         // make a student for each student in school
         for (int i = 0; i < m_iStudentNumber; i++) {
             String studentName = "";
+            System.out.println("Separate composed name with - please,");
+            System.out.println("You can also type all or some names separated" +
+                    " with a blank space");
             do {
                 System.out.println("What's the name of student N°" + (i + 1) + "?");
                 studentName = userInput.next();
@@ -21,7 +24,6 @@ public class School {
         }
 
     }
-
 
     // méthodes
 
