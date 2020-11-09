@@ -6,10 +6,12 @@ public class Student {
     //constructor
 
     public Student(String name) {
+        m_bIsGreeting = false;
         m_sName = name;
         setGradeNumber();
         m_aGradesListe = new String[getGradeNumber()];
         askGrades(m_aGradesListe);
+        m_iStudentAverage = calculateGradeAverage();
     }
 
     // méthodes
@@ -29,9 +31,19 @@ public class Student {
         }
     }
 
-    private void calculateGradeAverage() {
-        System.out.println("la moyenne est de ...");
+    private float calculateGradeAverage() {
+        float average = 0;
+        for (int i = 0; i < m_aGradesListe.length; i++) {
+            average += Float.parseFloat(m_aGradesListe[i]);
+        }
+        average /= m_aGradesListe.length;
+
+        if (average > 10) {
+            setIsGreeting(true);
+        }
+        return average;
     }
+    //todo set the float of average
 
     // getters
 
@@ -43,7 +55,16 @@ public class Student {
         return m_iGradeNumber;
     }
 
+    public float getStudentAverage() {
+        return m_iStudentAverage;
+    }
+
     // setters
+
+
+    public void setIsGreeting(boolean IsGreeting) {
+        m_bIsGreeting = IsGreeting;
+    }
 
     public void setGradeNumber() {
         System.out.println("How many grades for student named " + getName() + "?");
@@ -54,10 +75,11 @@ public class Student {
 
     // variables membres
     private String m_sName;
-    int m_iStudentAverage;// average of his grades
+    private float m_iStudentAverage;// average of his grades
     private int m_iGradeNumber;
     Scanner userInput = new Scanner(System.in);
     private String[] m_aGradesListe;
+    private boolean m_bIsGreeting;
 
     // he's fail or not
 

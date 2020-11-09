@@ -12,7 +12,7 @@ public class School {
 
         // make a student for each student in school
         for (int i = 0; i < m_iStudentNumber; i++) {
-            String studentName = "";
+            String studentName;
             System.out.println("Separate composed name with - please,");
             System.out.println("You can also type all or some names separated" +
                     " with a blank space");
@@ -70,7 +70,8 @@ public class School {
 
     public static void listStudentName(Student[] p_aStudentArray) {
         for (int i = 0; i < p_aStudentArray.length; i++) {
-            System.out.println(p_aStudentArray[i].getName());
+            System.out.println(p_aStudentArray[i].getName() + " have an " +
+                    "average of " + p_aStudentArray[i].getStudentAverage());
         }
 
     }
