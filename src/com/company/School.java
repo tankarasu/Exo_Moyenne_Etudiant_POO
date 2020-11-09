@@ -23,6 +23,8 @@ public class School {
             m_aStudentsArray[i] = new Student(studentName);
         }
 
+        listStudentName(m_aStudentsArray);
+
     }
 
     // méthodes

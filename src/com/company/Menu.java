@@ -21,7 +21,6 @@ public class Menu {
 
     public static void launchApplication() {
         School mySchool = new School();
-        mySchool.listStudentName(School.getStudentsArray());
     }
 
     // getters
