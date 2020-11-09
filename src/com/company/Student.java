@@ -21,7 +21,7 @@ public class Student {
 
         for (int i = 0; i < p_gradeArray.length; i++) {
             do {
-                System.out.println("How much is th grade N°" + (i + 1) + " " +
+                System.out.println("How much is the grade N°" + (i + 1) + " " +
                         "for" +
                         " " + getName() +
                         "?");
@@ -38,7 +38,7 @@ public class Student {
         }
         average /= m_aGradesListe.length;
 
-        if (average > 10) {
+        if (average >= 10) {
             setIsGreeting(true);
         }
         return average;
@@ -59,8 +59,11 @@ public class Student {
         return m_iStudentAverage;
     }
 
-    // setters
+    public boolean getIsGreeting() {
+        return m_bIsGreeting;
+    }
 
+    // setters
 
     public void setIsGreeting(boolean IsGreeting) {
         m_bIsGreeting = IsGreeting;
@@ -80,6 +83,8 @@ public class Student {
     Scanner userInput = new Scanner(System.in);
     private String[] m_aGradesListe;
     private boolean m_bIsGreeting;
+
+
 
     // he's fail or not
 
